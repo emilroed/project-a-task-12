@@ -1,2 +1,5 @@
 # Ignorer node_modules mappen
 /node_modules
+
+# Ignorer VS Code bruger-specifikke indstillinger
+/.vscode
