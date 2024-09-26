@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sten, Saks, Papir</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="text-gray-800 bg-gray-100">
+    <!-- Header -->
+    <header class="py-4 text-center text-white bg-blue-600">
+      <h1 class="text-4xl font-bold">Sten, Saks, Papir</h1>
+    </header>
+
+    <!-- Hovedsektion -->
+    <main class="flex flex-col items-center justify-center min-h-screen pt-16">
+      <!-- Spillere og score -->
+      <section class="flex items-center justify-between w-full max-w-4xl mb-8">
+        <div class="p-4 text-xl font-bold bg-gray-200 rounded-lg" id="username-section">
+          <div id="username" class="user-name">Spiller</div>
+        </div>
+
+        <!-- Score vises her -->
+        <div class="flex flex-col items-center mx-4">
+          <div class="text-2xl font-bold">Score</div>
+          <div id="score" class="text-lg">Spiller: <b>0</b> | Computer: <b>0</b></div>
+        </div>
+
+        <div class="p-4 text-xl font-bold bg-gray-200 rounded-lg" id="computer">
+          <div id="computer-label" class="computer-name">Computer</div>
+        </div>
+      </section>
+
+      <!-- Spil boks -->
+      <section class="flex flex-col items-center p-8 mb-4 bg-white rounded-lg shadow-lg">
+        <div class="flex mb-4 text-2xl" id="choices">
+          <div id="user-choice" class="p-2 font-extrabold">Du valgte:</div>
+          <div id="computer-choice" class="p-2 font-extrabold">Den valgte:</div>
+        </div>
+        <div id="result-section" class="mb-4 text-xl font-semibold text-center">
+          <div id="result">Hvem vinder?</div>
+        </div>
+      </section>
+
+      <!-- Knapper til valg af Sten, Saks, Papir -->
+      <section id="game-buttons" class="flex justify-center mb-4">
+        <button
+          class="px-4 py-2 m-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
+          id="sten"
+        >
+          Sten
+        </button>
+        <button
+          class="px-4 py-2 m-2 font-bold text-white bg-red-500 rounded hover:bg-red-700"
+          id="saks"
+        >
+          Saks
+        </button>
+        <button
+          class="px-4 py-2 m-2 font-bold text-white bg-green-500 rounded hover:bg-green-700"
+          id="papir"
+        >
+          Papir
+        </button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-white bg-gray-800">
+      <p>&copy; 2024 Sten, Saks, Papir Spillet</p>
+    </footer>
+  </body>
+</html>

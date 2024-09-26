@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Sikrer, at body fylder hele højden */
+}
+main {
+  flex: 1; /* Giver main sektionen mulighed for at tage al den resterende plads */
+}
+header {
+  position: fixed; /* Fastgør headeren */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Sørger for, at den er over indholdet */
+}
+footer {
+  position: fixed; /* Fastgør footer'en */
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.user-name {
+  font-weight: bold; /* Gør brugerens navn fed */
+  color: green; /* Tilføjer en blå farve */
+}
+
+.computer-name {
+  font-weight: bold; /* Gør computerens navn fed */
+  color: red; /* Tilføjer en rød farve */
+}
+.resultat-vinder {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: green; /* Bruger-vinder farve */
+}
+
+.resultat-tab {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: red; /* Computer-vinder farve */
+}
+
+.resultat-uafgjort {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(0, 4, 255); /* Uafgjort farve */
+}
