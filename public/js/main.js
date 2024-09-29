@@ -20,6 +20,7 @@ function hentNavn() {
 }
 
 // Funktion til at opdatere brugerens navn
+// TODO - kan muligvis undværeres
 function opdaterBrugerNavn(_brugerNavn) {
   let usernameDiv = document.querySelector("#username");
   usernameDiv.innerHTML = `<h1>Spiller:</h1><p>${_brugerNavn}</p>`;

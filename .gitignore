@@ -3,3 +3,12 @@
 
 # Ignorer VS Code bruger-specifikke indstillinger
 /.vscode
+
+# Ignorer readme.md (hvis du ikke vil have det tracket)
+/readme.md
+
+# Ignorer docJS.js
+docJS.js
+
+# Ignorer .DS_Store filer
+/.DS_Store
